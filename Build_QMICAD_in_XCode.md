@@ -1,9 +1,9 @@
 #CMake
-1. Change in CMakeLists.txt
-   - COMMAND mv        ${QMICAD_DIST_DIR}/lib/qmicad${CMAKE_SHARED_LIBRARY_SUFFIX}  ${QMICAD_DIST_DIR}/qmicad
-   - COMMAND cp    -rp ${QMICAD_DIST_DIR}/lib/libqmicad${CMAKE_SHARED_LIBRARY_SUFFIX} ${QMICAD_DIST_DIR}/qmicad
-   + COMMAND mv        ${QMICAD_DIST_DIR}/lib/Debug/qmicad${CMAKE_SHARED_LIBRARY_SUFFIX}  ${QMICAD_DIST_DIR}/qmicad
-   + COMMAND cp    -rp ${QMICAD_DIST_DIR}/lib/Debug/libqmicad${CMAKE_SHARED_LIBRARY_SUFFIX} ${QMICAD_DIST_DIR}/qmicad
+1. Change in `CMakeLists.txt`
+   - [ ] `COMMAND mv        ${QMICAD_DIST_DIR}/lib/qmicad${CMAKE_SHARED_LIBRARY_SUFFIX}  ${QMICAD_DIST_DIR}/qmicad`
+   - [ ] `COMMAND cp    -rp ${QMICAD_DIST_DIR}/lib/libqmicad${CMAKE_SHARED_LIBRARY_SUFFIX} ${QMICAD_DIST_DIR}/qmicad`
+   - [x] `COMMAND mv        ${QMICAD_DIST_DIR}/lib/Debug/qmicad${CMAKE_SHARED_LIBRARY_SUFFIX}  ${QMICAD_DIST_DIR}/qmicad`
+   - [x] `COMMAND cp    -rp ${QMICAD_DIST_DIR}/lib/Debug/libqmicad${CMAKE_SHARED_LIBRARY_SUFFIX} ${QMICAD_DIST_DIR}/qmicad`
   
 2. Use cmake to generate .xcodeproject for QMICAD.
 3. show the build directory as CHECKEDOUT_DIRECTORY/obj/
